@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import {
   ArrowRight,
   LayoutGrid,
+  LucideCalendarFold,
   MapPin,
   TrendingUp,
   Users,
@@ -102,7 +103,7 @@ export default function UniversityCard({
               value: university.ranking ? `#${university.ranking}` : "N/A",
             },
             {
-              icon: <span className="text-xs">📅</span>,
+              icon: <LucideCalendarFold size={14}/>,
               label: t("founded"),
               value: university.founded,
             },

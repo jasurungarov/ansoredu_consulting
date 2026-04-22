@@ -80,6 +80,8 @@
   "universities": {
     "badge": "Universities",
     "title": "Partner Institutions",
+    "description": "Brief information about the university.",
+    "keyMetrics": "University details",
     "subtitle": "Discover the best universities offering full scholarships.",
     "viewAll": "View All",
     "learnMore": "Learn More",
@@ -109,7 +111,19 @@
   "testimonials": {
     "badge": "Success Stories",
     "title": "What Our Students Say",
-    "subtitle": "Real experiences from students we have helped."
+    "subtitle": "Real experiences from students we have helped.",
+    "student1": {
+      "name": "Jasur Ungarov",
+      "role": "KAU Student",
+      "content": "With the help of Ansor Edu, I got into a university in Saudi Arabia. Currently, I am studying with all my expenses fully covered.",
+      "avatar": "JU"
+    },
+    "student2": {
+      "name": "Malika Sobirova",
+      "role": "PNU Student",
+      "content": "They provided great assistance in preparing my documents. The visa application process was much easier than expected.",
+      "avatar": "MS"
+    }
   },
   "contact": {
     "badge": "Get in Touch",

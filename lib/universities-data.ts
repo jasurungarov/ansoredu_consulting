@@ -78,7 +78,7 @@ export const universitiesData: University[] = [
       ru: "Одно из самых известных исламских учебных заведений в мире. Предлагает 100% грантовые программы для иностранных студентов.",
       en: "One of the most famous Islamic educational institutions in the world. Offers 100% scholarship programs for international students."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/ium.png",
     image: "https://images.unsplash.com/photo-1590076247564-a29d58ed5c1d?w=800&q=80",
     slug: "islamic-university-of-madinah",
     ranking: "Top 1000",
@@ -107,7 +107,7 @@ export const universitiesData: University[] = [
       ru: "Первый университет в Саудовской Аравии. Лидер в области исследований и инноваций.",
       en: "The first university in Saudi Arabia. A leader in research and innovation."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/ksu.png",
     image: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
     slug: "king-saud-university",
     ranking: "203",
@@ -136,7 +136,7 @@ export const universitiesData: University[] = [
       ru: "Исследовательский университет мирового уровня, специализирующийся исключительно на магистратуре и докторантуре.",
       en: "A world-class research university specializing exclusively in graduate studies (Master's and PhD)."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/kaust.png",
     image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     slug: "kaust",
     ranking: "Research Excellence",
@@ -165,7 +165,7 @@ export const universitiesData: University[] = [
       ru: "Крупнейший женский университет в мире. Предоставляет полные гранты для женщин.",
       en: "The largest women's university in the world. Provides full scholarships for women."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/nora.png",
     image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
     slug: "princess-nora-university",
     ranking: "601-800",
@@ -194,7 +194,7 @@ export const universitiesData: University[] = [
       ru: "Один из ведущих государственных университетов, поддерживающих иностранных студентов.",
       en: "One of the leading public universities supporting international students."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/qassim.png",
     image: "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=800&q=80",
     slug: "qassim-university",
     ranking: "401-500",
@@ -223,7 +223,7 @@ export const universitiesData: University[] = [
       ru: "Основной государственный университет Катара. Имеются гранты для иностранных студентов.",
       en: "The main public university of Qatar. Scholarships are available for international students."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/qatar.png",
     image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80",
     slug: "qatar-university",
     ranking: "173",
@@ -252,7 +252,7 @@ export const universitiesData: University[] = [
       ru: "Старейший и престижный университет в ОАЭ. Предоставляются полные гранты.",
       en: "The oldest and most prestigious university in the UAE. Full scholarships are offered."
     },
-    logo: "/unvr/kau-logo.png",
+    logo: "/unvr/uae.png",
     image: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
     slug: "uae-university",
     ranking: "290",

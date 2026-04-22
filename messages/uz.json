@@ -79,6 +79,8 @@
   },
   "universities": {
     "badge": "Universitetlar",
+    "description": "Universitet haqida qisqacha ma'lumot.",
+    "keyMetrics": "Universitet tafsilotlari",
     "title": "Hamkor muassasalar",
     "subtitle": "To'liq grantlar taklif qiladigan eng yaxshi universitetlarni kashf qiling.",
     "viewAll": "Hammasini ko'rish",
@@ -109,7 +111,19 @@
   "testimonials": {
     "badge": "Muvaffaqiyat hikoyalari",
     "title": "Talabalarimiz fikri",
-    "subtitle": "Biz yordam bergan talabalarning real tajribalari."
+    "subtitle": "Biz yordam bergan talabalarning real tajribalari.",
+    "student1": {
+      "name": "Jasur Ungarov",
+      "role": "KAU Student",
+      "content": "Ansor Edu yordamida Saudiya Arabistoniga o'qishga kirdim. Hozirda barcha xarajatlarim qoplangan holda tahsil olyapman.",
+      "avatar": "JU"
+    },
+    "student2": {
+      "name": "Malika Sobirova",
+      "role": "PNU Student",
+      "content": "Hujjatlarimni tayyorlashda juda katta yordam berishdi. Viza olish jarayoni ham kutilganidan oson kechdi.",
+      "avatar": "MS"
+    }
   },
   "contact": {
     "badge": "Biz bilan bog'lanish",

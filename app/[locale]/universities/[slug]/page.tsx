@@ -139,8 +139,8 @@ export default async function UniversityDetailPage({
                 <div className="p-2.5 bg-blue-50 text-blue-600 rounded-xl">
                   <Award className="w-6 h-6" />
                 </div>
-                <h2 className="text-2xl font-bold text-slate-900">
-                   {t("about.badge")}
+                <h2 className="text-xl font-bold text-slate-900">
+                   {t("universities.description")}
                 </h2>
              </div>
              <p className="text-slate-600 leading-relaxed text-lg whitespace-pre-line">
@@ -187,7 +187,7 @@ export default async function UniversityDetailPage({
               {/* Info Card */}
               <div className="bg-white p-8 rounded-3xl shadow-sm border border-slate-200/60 transition-all hover:shadow-md">
                  <h3 className="text-xl font-bold mb-8 text-slate-900 border-b border-slate-100 pb-4">
-                   University Details
+                    {t("universities.keyMetrics")}
                  </h3>
                  
                  <div className="space-y-6">
