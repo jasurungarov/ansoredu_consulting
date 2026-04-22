@@ -1,6 +1,6 @@
 import ApplicationForm from "@/components/shared/ApplicationForm";
 import SectionHeader from "@/components/shared/SectionHeader";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 
@@ -23,9 +23,9 @@ export default function ContactPage() {
     <div className="py-20 bg-gray-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
-          title={t('title')}
-          subtitle={t('subtitle')}
-          badge={t('badge')}
+          title={t("title")}
+          subtitle={t("subtitle")}
+          badge={t("badge")}
         />
 
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-8 items-start">
@@ -33,34 +33,22 @@ export default function ContactPage() {
           <div className="lg:col-span-2 space-y-8">
             <div className="bg-white rounded-3xl shadow-sm border border-blue-100 p-8">
               <h3 className="text-xl font-bold text-gray-900 mb-6">
-                {t('card.title')}
+                {t("card.title")}
               </h3>
 
               <ul className="space-y-6">
-                <li className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
-                    <MapPin className="text-blue-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t('card.address')}</h4>
-                    <p className="text-gray-500 text-sm leading-relaxed">
-                      {t('card.addressLine')}
-                    </p>
-                  </div>
-                </li>
-
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
                     <Phone className="text-blue-600" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                      {t('card.phone')}
+                      {t("card.phone")}
                     </h4>
                     <a
                       href="tel:+998901234567"
                       className="text-gray-500 text-sm hover:text-blue-600 transition-colors">
-                      {t('card.phoneLine')}
+                      {t("card.phoneLine")}
                     </a>
                   </div>
                 </li>
@@ -70,11 +58,13 @@ export default function ContactPage() {
                     <Mail className="text-blue-600" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">{t('card.email')}</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      {t("card.email")}
+                    </h4>
                     <a
                       href="mailto:info@ansoredu.uz"
                       className="text-gray-500 text-sm hover:text-blue-600 transition-colors">
-                      {t('card.emailLine')}
+                      {t("card.emailLine")}
                     </a>
                   </div>
                 </li>
@@ -85,10 +75,10 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">
-                     {t('card.hours')}
+                      {t("card.hours")}
                     </h4>
                     <p className="text-gray-500 text-sm">
-                      {t('card.hoursLine')}
+                      {t("card.hoursLine")}
                     </p>
                   </div>
                 </li>
@@ -100,10 +90,10 @@ export default function ContactPage() {
               <div className="absolute top-0 right-0 w-40 h-40 bg-[#D4AF37]/10 rounded-full -translate-y-16 translate-x-16" />
               <div className="absolute bottom-0 left-0 w-32 h-32 bg-[#D4AF37]/10 rounded-full translate-y-12 -translate-x-12" />
               <div className="absolute top-4 left-6 text-[#D4AF37]/20 text-8xl font-serif leading-none select-none">
-                {t('motivational.dot')}
+                {t("motivational.dot")}
               </div>
               <div className="absolute bottom-2 right-6 text-[#D4AF37]/20 text-8xl font-serif leading-none select-none">
-                {t('motivational.dot')}
+                {t("motivational.dot")}
               </div>
 
               <div className="relative z-10 mb-3">
@@ -117,14 +107,16 @@ export default function ContactPage() {
                 </div>
               </div>
               <p className="relative z-10 text-white text-base font-medium leading-relaxed max-w-xs">
-                {t('motivational.subtitle')}
-                <span className="text-[#D4AF37] font-semibold">{t('motivational.subtitle1')}</span>
-                {t('motivational.subtitle2')}
+                {t("motivational.subtitle")}
+                <span className="text-[#D4AF37] font-semibold">
+                  {t("motivational.subtitle1")}
+                </span>
+                {t("motivational.subtitle2")}
               </p>
               <div className="relative z-10 mt-4 flex items-center gap-2">
                 <div className="w-8 h-px bg-[#D4AF37]/50" />
                 <span className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase">
-                  {t('motivational.title')}
+                  {t("motivational.title")}
                 </span>
                 <div className="w-8 h-px bg-[#D4AF37]/50" />
               </div>
@@ -136,10 +128,10 @@ export default function ContactPage() {
             <div className="bg-white rounded-3xl shadow-xl shadow-blue-900/5 border border-blue-100 p-8 sm:p-10">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {t('card.cardTitle')}
+                  {t("card.cardTitle")}
                 </h3>
                 <p className="text-gray-500 text-sm">
-                  {t('card.cardSubtitle')}
+                  {t("card.cardSubtitle")}
                 </p>
               </div>
               <ApplicationForm />

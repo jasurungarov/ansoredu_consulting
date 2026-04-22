@@ -38,7 +38,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2.5 group p-6"
+            className="flex items-center gap-2.5 group p-2"
             aria-label="Ansor Edu - Home"
           >
             <div className="flex items-center justify-center ">

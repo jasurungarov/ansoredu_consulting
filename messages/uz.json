@@ -129,6 +129,16 @@
     "badge": "Biz bilan bog'lanish",
     "title": "Bog'lanish",
     "subtitle": "Savollaringiz bormi yoki ariza topshirmoqchimisiz? Quyidagi formani to'ldiring, bepul konsultatsiya oling.",
+    "optional": "(ixtiyoriy)",
+    "back": "Orqaga qaytish",
+    "selectUniversity": "— Universitetni tanlang —",
+     "errors": {
+      "required": "Ismingizni yozing!",
+      "invalidUnvercity": "Universitetni tanlang!",
+      "invalidPhone": "Telefon raqamingizni yozing!",
+      "city": "Shaharingiz nomini yozing!",
+      "serverError": "Xatolik yuz berdi."
+    },
     "card": {
       "title": "Aloqa ma'lumotlari",
       "address": "Manzil",
@@ -178,14 +188,6 @@
     "privacy": "Maxfiylik siyosati",
     "terms": "Xizmat ko'rsatish shartlari",
     "subtitle": "Hoziroq topshirish tugmasini bosing va arizangizni qoldiring."
-  },
-  "errors": {
-    "required": "To'ldirilishi shart",
-    "invalidEmail": "Noto'g'ri email",
-    "invalidPhone": "Noto'g'ri telefon raqami",
-    "minLength": "Kamida {min} ta belgi bo'lishi kerak",
-    "serverError": "Xatolik yuz berdi.",
-    "notFound": "Sahifa topilmadi"
   },
   "cta": {
     "title": "Sayohatingizni bugun boshlang!",

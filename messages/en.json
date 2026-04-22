@@ -129,6 +129,16 @@
     "badge": "Get in Touch",
     "title": "Contact Us",
     "subtitle": "Have questions or want to apply? Fill out the form below and get a free consultation.",
+    "optional": "(optional)",
+    "back": "Go back",
+    "selectUniversity": "— Select a university —",
+    "errors": {
+      "required": "Please enter your name!",
+      "invalidUnvercity": "Please select a university!",
+      "invalidPhone": "Please enter your phone number!",
+      "city": "Please enter your city!",
+      "serverError": "An error occurred."
+    },
     "card": {
       "title": "Contact Information",
       "address": "Address",
@@ -178,14 +188,6 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "subtitle": "Click the apply button right now and leave your application."
-  },
-  "errors": {
-    "required": "This field is required",
-    "invalidEmail": "Invalid email address",
-    "invalidPhone": "Invalid phone number",
-    "minLength": "Must be at least {min} characters",
-    "serverError": "An error occurred.",
-    "notFound": "Page not found"
   },
   "cta": {
     "title": "Start Your Journey Today!",
