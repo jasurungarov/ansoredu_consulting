@@ -88,7 +88,7 @@ export default async function UniversityDetailPage({
          <div className="absolute top-6 left-6 lg:left-24 z-10">
             <Link 
               href="/universities" 
-              className="group flex items-center text-white/90 hover:text-white gap-2 bg-white/10 hover:bg-white/20 px-5 py-2.5 rounded-full backdrop-blur-md transition-all duration-300 border border-white/10"
+              className="group flex items-center text-blue-700 hover:text-white gap-2 bg-white/10 hover:bg-blue-600 px-5 py-2.5 rounded-full backdrop-blur-md transition-all duration-300 border border-blue-600"
             >
               <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
               <span className="font-medium text-sm">{t("nav.universities")}</span>

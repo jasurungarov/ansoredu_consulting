@@ -30,7 +30,7 @@ export interface University {
 
 export const universitiesData: University[] = [
   {
-    id: "kau",
+    id: "KAU",
     name: {
       uz: "King Abdulaziz University (KAU)",
       kg: "Король Абдулазиз университети (KAU)",
@@ -50,7 +50,7 @@ export const universitiesData: University[] = [
       en: "One of the most prestigious universities in Saudi Arabia. Ranked among the top 150 in the world by QS World University Rankings."
     },
     logo: "/unvr/kau-logo.png",
-    image: "",
+    image: "/images/kau.jpg",
     slug: "king-abdulaziz-university",
     ranking: "143",
     founded: "1967",
@@ -59,7 +59,36 @@ export const universitiesData: University[] = [
     tags: ["Engineering", "Medicine", "IT", "Business"]
   },
   {
-    id: "ium",
+    "id": "UQU",
+    "name": {
+      "uz": "Umm Al-Qura Universiteti (UQU)",
+      "kg": "Умм Аль-Кура университети (UQU)",
+      "ru": "Университет Умм Аль-Кура (UQU)",
+      "en": "Umm Al-Qura University (UQU)"
+    },
+    "location": {
+      "uz": "Makka, Saudiya Arabistoni",
+      "kg": "Мекке, Сауд Арабиясы",
+      "ru": "Мекка, Саудовская Аравия",
+      "en": "Makkah, Saudi Arabia"
+    },
+    "description": {
+      "uz": "Makkai Mukarramadagi eng qadimiy va nufuzli davlat universiteti. Islomshunoslik, muhandislik va tibbiyot sohalarida kuchli akademik dasturlarga ega.",
+      "kg": "Меккедеги эң эски жана кадыр-барктуу мамлекеттик университет. Ислам таануу, инженерия жана медицина тармактарында күчтүү академиялык программаларга ээ.",
+      "ru": "Старейший и престижнейший государственный университет в Мекке. Имеет сильные академические программы в области исламоведения, инженерии и медицины.",
+      "en": "The oldest and most prestigious public university in Makkah. It offers strong academic programs in Islamic studies, engineering, and medicine."
+    },
+    "logo": "/unvr/uqu.png",
+    "image": "/images/umalqura.jpg",
+    "slug": "umm-al-qura-university",
+    "ranking": "Top 500",
+    "founded": "1949",
+    "students": "100,000+",
+    "faculties": 35,
+    "tags": ["Islamic Studies", "Engineering", "Medicine", "Arabic Language"]
+  },
+  {
+    id: "IUM",
     name: {
       uz: "Madina Islom Universiteti (IUM)",
       kg: "Медина Ислам университети (IUM)",
@@ -79,7 +108,7 @@ export const universitiesData: University[] = [
       en: "One of the most famous Islamic educational institutions in the world. Offers 100% scholarship programs for international students."
     },
     logo: "/unvr/ium.png",
-    image: "https://images.unsplash.com/photo-1590076247564-a29d58ed5c1d?w=800&q=80",
+    image: "/images/ium.jfif",
     slug: "islamic-university-of-madinah",
     ranking: "Top 1000",
     founded: "1961",
@@ -88,7 +117,7 @@ export const universitiesData: University[] = [
     tags: ["Sharia", "Arabic Language", "Holy Quran"]
   },
   {
-    id: "ksu",
+    id: "KSU",
     name: {
       uz: "Qirol Saud Universiteti (KSU)",
       kg: "Король Сауд университети (KSU)",
@@ -108,7 +137,7 @@ export const universitiesData: University[] = [
       en: "The first university in Saudi Arabia. A leader in research and innovation."
     },
     logo: "/unvr/ksu.png",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
+    image: "/images/saud.jfif",
     slug: "king-saud-university",
     ranking: "203",
     founded: "1957",
@@ -117,7 +146,7 @@ export const universitiesData: University[] = [
     tags: ["Medicine", "Science", "Engineering"]
   },
   {
-    id: "kaust",
+    id: "KAUST",
     name: {
       uz: "Qirol Abdulla Fan va Texnologiya Universiteti (KAUST)",
       kg: "Король Абдулла илим жана технология университети (KAUST)",
@@ -137,7 +166,7 @@ export const universitiesData: University[] = [
       en: "A world-class research university specializing exclusively in graduate studies (Master's and PhD)."
     },
     logo: "/unvr/kaust.png",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+    image: "/images/kaust1.jfif",
     slug: "kaust",
     ranking: "Research Excellence",
     founded: "2009",
@@ -146,7 +175,7 @@ export const universitiesData: University[] = [
     tags: ["Engineering", "Biology", "Environment", "CS"]
   },
   {
-    id: "pnu",
+    id: "PNU",
     name: {
       uz: "Malika Nora bint Abdulrahmon Universiteti",
       kg: "Принцесса Нура бинт Абдулрахман университети",
@@ -166,7 +195,7 @@ export const universitiesData: University[] = [
       en: "The largest women's university in the world. Provides full scholarships for women."
     },
     logo: "/unvr/nora.png",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+    image: "/images/nora1.png",
     slug: "princess-nora-university",
     ranking: "601-800",
     founded: "1970",
@@ -175,7 +204,7 @@ export const universitiesData: University[] = [
     tags: ["Arts", "Health", "Social Science"]
   },
   {
-    id: "qu",
+    id: "QU",
     name: {
       uz: "Qassim Universiteti",
       kg: "Кассим университети",
@@ -195,7 +224,7 @@ export const universitiesData: University[] = [
       en: "One of the leading public universities supporting international students."
     },
     logo: "/unvr/qassim.png",
-    image: "https://images.unsplash.com/photo-1492538368677-f6e0afe31dcc?w=800&q=80",
+    image: "/images/qassim1.jpeg",
     slug: "qassim-university",
     ranking: "401-500",
     founded: "2004",
@@ -204,7 +233,7 @@ export const universitiesData: University[] = [
     tags: ["Agriculture", "Law", "Computing"]
   },
   {
-    id: "quoe",
+    id: "QUOE",
     name: {
       uz: "Qatar Universiteti",
       kg: "Катар университети",
@@ -224,7 +253,7 @@ export const universitiesData: University[] = [
       en: "The main public university of Qatar. Scholarships are available for international students."
     },
     logo: "/unvr/qatar.png",
-    image: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&q=80",
+    image: "/images/qatar1.jfif",
     slug: "qatar-university",
     ranking: "173",
     founded: "1973",
@@ -233,7 +262,7 @@ export const universitiesData: University[] = [
     tags: ["Business", "Education", "Law"]
   },
   {
-    id: "uaeu",
+    id: "UAEU",
     name: {
       uz: "BAA Universiteti",
       kg: "БАЭ университети",
@@ -253,7 +282,7 @@ export const universitiesData: University[] = [
       en: "The oldest and most prestigious university in the UAE. Full scholarships are offered."
     },
     logo: "/unvr/uae.png",
-    image: "https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80",
+    image: "/images/uae1.jpg",
     slug: "uae-university",
     ranking: "290",
     founded: "1976",
