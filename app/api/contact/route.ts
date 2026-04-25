@@ -7,6 +7,7 @@ const schema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
+  nickName: z.string().optional(),
   message: z.string().optional(),
 });
 
@@ -28,14 +29,20 @@ export async function POST(req: NextRequest) {
 
     const text = `
 🎓 *YANGI ARIZA — ANSOR EDU*
-━━━━━━━━━━━━━━━━━━━━
-👤 *Ism:* ${data.fullName}
-📞 *Telefon:* ${data.phone}
-📧 *Email:* ${data.email || "—"}
-🏙️ *Shahar:* ${data.city}
-🏛️ *Universitet:* ${data.interestedIn}
-💬 *Xabar:* ${data.message || "—"}
-━━━━━━━━━━━━━━━━━━━━
+
+📄 *Foydalanuvchi ma'lumotlari*
+
+👤 To'liq ism: ${data.fullName}
+📞 Telefon raqami: ${data.phone}
+📧 Elektron pochta: ${data.email || "Mavjud emas, kiritilmagan"}
+🏙️ Yashash shahri: ${data.city}
+🏛️ Qiziqayotgan universiteti: ${data.interestedIn}
+🆔 Telegram niki: ${data.nickName ? "@" + data.nickName : "Mavjud emas, kiritilmagan"}
+
+💬 *Murojaat mazmuni:*
+
+${data.message || "Xabar qoldirilmagan & qiziqish bildirilgan"}
+
 🕐 *Vaqt:* ${new Date().toLocaleString("uz-UZ", {
       timeZone: "Asia/Tashkent",
     })}

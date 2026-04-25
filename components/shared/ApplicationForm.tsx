@@ -12,6 +12,7 @@ const schema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
+  nickName: z.string().optional(),
   message: z.string().optional(),
 });
 
@@ -27,6 +28,7 @@ export default function ApplicationForm() {
     email: "",
     city: "",
     interestedIn: "",
+    nickName: "",
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
@@ -75,7 +77,7 @@ export default function ApplicationForm() {
       setStatus("success");
       setForm({
         fullName: "", phone: "", email: "",
-        city: "", interestedIn: "", message: "",
+        city: "", interestedIn: "", nickName: "", message: "",
       });
     } catch {
       setStatus("error");
@@ -187,8 +189,9 @@ export default function ApplicationForm() {
         </div>
       </div>
 
-      {/* University select */}
-      <div>
+      {/* University select and NickName */}
+      <div className='grid sm:grid-cols-2 gap-4'>
+        <div>
         <label className="block text-sm font-medium text-gray-700 mb-1.5">
           {t("interestedIn")} <span className="text-red-500">*</span>
         </label>
@@ -208,6 +211,19 @@ export default function ApplicationForm() {
         {errors.interestedIn && (
           <p className="text-red-500 text-xs mt-1">{t("errors.invalidUnvercity", { ns: "errors" }) ?? errors.interestedIn}</p>
         )}
+        </div>
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-1.5">
+            {t("nickName")} <span className="text-red-500">*</span>
+          </label>
+          <input
+            name="nickName"
+            value={form.nickName}
+            onChange={handleChange}
+            placeholder={t("placeholdernickName")}
+            className={inputClass("nickName")}
+          />
+        </div>
       </div>
 
       {/* Message */}

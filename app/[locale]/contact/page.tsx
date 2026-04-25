@@ -3,6 +3,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import { Clock, Mail, Phone } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
+import { TbBrandTelegram } from "react-icons/tb";
 
 export async function generateMetadata({
   params,
@@ -37,6 +38,22 @@ export default function ContactPage() {
               </h3>
 
               <ul className="space-y-6">
+                <li className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
+                    <TbBrandTelegram size={26} className="text-blue-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">
+                      {t("telegram")}
+                    </h4>
+                    <a
+                      href="tel:+998901234567"
+                      className="text-gray-500 text-sm hover:text-blue-600 transition-colors">
+                      {t("telegramSubtitle")}
+                    </a>
+                  </div>
+                </li>
+
                 <li className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center shrink-0">
                     <Phone className="text-blue-600" />

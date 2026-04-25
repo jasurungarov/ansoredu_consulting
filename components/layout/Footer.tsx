@@ -5,6 +5,7 @@ import { Mail, Phone, Send } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { TbBrandTelegram } from "react-icons/tb";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -36,14 +37,23 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-4">
               {[
-                { icon: <FaInstagram size={18} />, href: "https://www.instagram.com/ansor_edu_/" },
-                { icon: <FaWhatsapp size={18} />, href: "https://api.whatsapp.com/send?phone=+996557858446" },
-                { icon: <Send size={18} />, href: "https://t.me/ansor_edu_admin" },
+                {
+                  icon: <FaInstagram size={18} />,
+                  href: "https://www.instagram.com/ansor_edu_/",
+                },
+                {
+                  icon: <FaWhatsapp size={18} />,
+                  href: "https://api.whatsapp.com/send?phone=+996557858446",
+                },
+                {
+                  icon: <Send size={18} />,
+                  href: "https://t.me/ansor_edu_admin",
+                },
               ].map((social, i) => (
                 <a
                   key={i}
                   href={social.href}
-                  className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                  className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 hover:bg-blue-600 hover:text-white transition-all duration-300">
                   {social.icon}
                 </a>
               ))}
@@ -80,6 +90,14 @@ export default function Footer() {
             </h4>
             <ul className="space-y-4">
               <li className="flex items-center gap-3">
+                <TbBrandTelegram size={22} className="text-blue-600 shrink-0" />
+                <a
+                  href={"https://t.me/ansor_edu_admin"}
+                  className="text-sm text-gray-500 hover:text-blue-600 transition-colors">
+                  {t("telegramSubtitle")}
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
                 <Phone size={18} className="text-blue-600 shrink-0" />
                 <a
                   href={`tel:${t("phone").replace(/\s/g, "")}`}
@@ -103,9 +121,7 @@ export default function Footer() {
             <h4 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-6">
               {tNav("apply")}
             </h4>
-            <p className="text-sm text-gray-500 mb-6">
-              {t("subtitle")}
-            </p>
+            <p className="text-sm text-gray-500 mb-6">{t("subtitle")}</p>
             <Link href="/contact" className="btn-primary w-full text-xs py-3">
               {tNav("apply")}
             </Link>
