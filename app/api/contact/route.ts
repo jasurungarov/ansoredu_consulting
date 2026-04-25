@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 
+const escapeMarkdown = (text: string) => {
+  return text.replace(/[_*[\]()~`>#+-=|{}.!]/g, '\\$&');
+};
+
 const schema = z.object({
   fullName: z.string().min(2),
   phone: z.string().min(9),
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
-  nickName: z.string().optional(),
+  nickName: z.string().optional().or(z.literal("")),
   message: z.string().optional(),
 });
 
@@ -37,7 +41,7 @@ export async function POST(req: NextRequest) {
 📧 Elektron pochta: ${data.email || "Mavjud emas, kiritilmagan"}
 🏙️ Yashash shahri: ${data.city}
 🏛️ Qiziqayotgan universiteti: ${data.interestedIn}
-🆔 Telegram niki: ${data.nickName ? "@" + data.nickName : "Mavjud emas, kiritilmagan"}
+🆔 Telegram niki: ${data.nickName ? "@" + escapeMarkdown(data.nickName.replace('@', '')) : "Mavjud emas, kiritilmagan"}
 
 💬 *Murojaat mazmuni:*
 

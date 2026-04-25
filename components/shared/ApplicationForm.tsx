@@ -1,10 +1,10 @@
 "use client";
 
-import { universitiesData } from '@/lib/universities-data'
+import { universitiesData } from "@/lib/universities-data";
 import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
-import { z } from "zod";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { z } from "zod";
 
 const schema = z.object({
   fullName: z.string().min(2),
@@ -12,7 +12,7 @@ const schema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
-  nickName: z.string().optional(),
+  nickName: z.string().optional().or(z.literal("")),
   message: z.string().optional(),
 });
 
@@ -32,7 +32,9 @@ export default function ApplicationForm() {
     message: "",
   });
   const [errors, setErrors] = useState<FormErrors>({});
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
 
   const validate = (): boolean => {
     const result = schema.safeParse(form);
@@ -50,7 +52,9 @@ export default function ApplicationForm() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
@@ -76,8 +80,13 @@ export default function ApplicationForm() {
 
       setStatus("success");
       setForm({
-        fullName: "", phone: "", email: "",
-        city: "", interestedIn: "", nickName: "", message: "",
+        fullName: "",
+        phone: "",
+        email: "",
+        city: "",
+        interestedIn: "",
+        nickName: "",
+        message: "",
       });
     } catch {
       setStatus("error");
@@ -89,17 +98,25 @@ export default function ApplicationForm() {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center gap-4">
         <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-          <svg className="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+          <svg
+            className="w-8 h-8 text-green-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M5 13l4 4L19 7"
+            />
           </svg>
         </div>
         <h4 className="text-xl font-bold text-gray-900">{t("successTitle")}</h4>
         <p className="text-gray-500 text-sm max-w-xs">{t("successDesc")}</p>
         <button
           onClick={() => setStatus("idle")}
-          className="mt-2 flex flex-row items-center gap-2 text-lg text-[#1B3A8C] underline underline-offset-2 hover:text-[#D4AF37] transition-colors"
-        >
-          <IoMdArrowRoundBack size={20}/>
+          className="mt-2 flex flex-row items-center gap-2 text-lg text-[#1B3A8C] underline underline-offset-2 hover:text-[#D4AF37] transition-colors">
+          <IoMdArrowRoundBack size={20} />
           {t("back")}
         </button>
       </div>
@@ -109,10 +126,11 @@ export default function ApplicationForm() {
   // ── Input class helpers ────────────────────────────────────────────────────
   const inputClass = (field: keyof FormData) =>
     `w-full px-4 py-3 rounded-xl border text-sm outline-none transition-all
-     ${errors[field]
-      ? "border-red-400 bg-red-50 focus:ring-2 focus:ring-red-200"
-      : "border-gray-200 bg-gray-50 focus:border-[#1B3A8C] focus:ring-2 focus:ring-[#1B3A8C]/10 focus:bg-white"
-    }`;
+     ${
+       errors[field]
+         ? "border-red-400 bg-red-50 focus:ring-2 focus:ring-red-200"
+         : "border-gray-200 bg-gray-50 focus:border-[#1B3A8C] focus:ring-2 focus:ring-[#1B3A8C]/10 focus:bg-white"
+     }`;
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
@@ -130,7 +148,9 @@ export default function ApplicationForm() {
             className={inputClass("fullName")}
           />
           {errors.fullName && (
-            <p className="text-red-500 text-xs mt-1">{t("errors.required", { ns: "errors" }) ?? errors.fullName}</p>
+            <p className="text-red-500 text-xs mt-1">
+              {t("errors.required", { ns: "errors" }) ?? errors.fullName}
+            </p>
           )}
         </div>
 
@@ -147,7 +167,9 @@ export default function ApplicationForm() {
             className={inputClass("phone")}
           />
           {errors.phone && (
-            <p className="text-red-500 text-xs mt-1">{t("errors.invalidPhone", { ns: "errors" }) ?? errors.phone}</p>
+            <p className="text-red-500 text-xs mt-1">
+              {t("errors.invalidPhone", { ns: "errors" }) ?? errors.phone}
+            </p>
           )}
         </div>
       </div>
@@ -184,33 +206,39 @@ export default function ApplicationForm() {
             className={inputClass("city")}
           />
           {errors.city && (
-            <p className="text-red-500 text-xs mt-1">{t("errors.city", { ns: "errors" }) ?? errors.city}</p>
+            <p className="text-red-500 text-xs mt-1">
+              {t("errors.city", { ns: "errors" }) ?? errors.city}
+            </p>
           )}
         </div>
       </div>
 
       {/* University select and NickName */}
-      <div className='grid sm:grid-cols-2 gap-4'>
+      <div className="grid sm:grid-cols-2 gap-4">
         <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1.5">
-          {t("interestedIn")} <span className="text-red-500">*</span>
-        </label>
-        <select
-          name="interestedIn"
-          value={form.interestedIn}
-          onChange={handleChange}
-          className={inputClass("interestedIn")}
-        >
-          <option value="" disabled>{t('selectUniversity')}</option>
-           {universitiesData.map((u) => (
+          <label className="block text-sm font-medium text-gray-700 mb-1.5">
+            {t("interestedIn")} <span className="text-red-500">*</span>
+          </label>
+          <select
+            name="interestedIn"
+            value={form.interestedIn}
+            onChange={handleChange}
+            className={inputClass("interestedIn")}>
+            <option value="" disabled>
+              {t("selectUniversity")}
+            </option>
+            {universitiesData.map((u) => (
               <option key={u.id} value={u.id}>
                 {u.name[locale as keyof typeof u.name]}
               </option>
             ))}
-        </select>
-        {errors.interestedIn && (
-          <p className="text-red-500 text-xs mt-1">{t("errors.invalidUnvercity", { ns: "errors" }) ?? errors.interestedIn}</p>
-        )}
+          </select>
+          {errors.interestedIn && (
+            <p className="text-red-500 text-xs mt-1">
+              {t("errors.invalidUnvercity", { ns: "errors" }) ??
+                errors.interestedIn}
+            </p>
+          )}
         </div>
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -245,10 +273,20 @@ export default function ApplicationForm() {
       {/* Error banner */}
       {status === "error" && (
         <div className="flex items-center gap-2 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
-          <svg className="w-4 h-4 text-red-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+          <svg
+            className="w-4 h-4 text-red-500 shrink-0"
+            fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+              clipRule="evenodd"
+            />
           </svg>
-          <p className="text-red-600 text-sm">{t("errors.serverError", { ns: "errors" }) ?? "Xatolik yuz berdi. Qayta urinib ko'ring."}</p>
+          <p className="text-red-600 text-sm">
+            {t("errors.serverError", { ns: "errors" }) ??
+              "Xatolik yuz berdi. Qayta urinib ko'ring."}
+          </p>
         </div>
       )}
 
@@ -256,21 +294,43 @@ export default function ApplicationForm() {
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full py-3.5 px-6 rounded-xl bg-[#1B3A8C] hover:bg-[#0f2460] text-white font-semibold text-sm tracking-wide transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg shadow-[#1B3A8C]/20 hover:shadow-[#1B3A8C]/30"
-      >
+        className="w-full py-3.5 px-6 rounded-xl bg-[#1B3A8C] hover:bg-[#0f2460] text-white font-semibold text-sm tracking-wide transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-lg shadow-[#1B3A8C]/20 hover:shadow-[#1B3A8C]/30">
         {status === "loading" ? (
           <>
-            <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
-              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+            <svg
+              className="w-4 h-4 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24">
+              <circle
+                className="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                strokeWidth="4"
+              />
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8v8z"
+              />
             </svg>
             {t("submitting")}
           </>
         ) : (
           <>
             {t("submit")}
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14 5l7 7m0 0l-7 7m7-7H3"
+              />
             </svg>
           </>
         )}
