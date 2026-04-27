@@ -99,7 +99,7 @@ export default function ChatWidget() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-10 right-6 z-50 flex flex-col items-end">
       {/* Chat oynasi */}
       {isOpen && (
         <div className="mb-4 w-85 h-130 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border animate-in slide-in-from-bottom-5">
