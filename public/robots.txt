@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ansoredu.uz/sitemap.xml
