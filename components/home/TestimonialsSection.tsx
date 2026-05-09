@@ -25,7 +25,7 @@ export default function TestimonialsSection() {
             className="bg-white p-8 rounded-3xl border border-blue-100 shadow-sm relative overflow-hidden">
             <Quote className="absolute top-6 right-8 w-12 h-12 text-blue-50 opacity-10" />
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
+              <div className="size-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold">
                 {t("student1.avatar")}
               </div>
               <div>

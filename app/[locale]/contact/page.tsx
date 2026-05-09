@@ -47,7 +47,7 @@ export default function ContactPage() {
                       {t("telegram")}
                     </h4>
                     <a
-                      href="tel:+998901234567"
+                      href="https://t.me/ansor_edu_admin"
                       className="text-gray-500 text-sm hover:text-blue-600 transition-colors">
                       {t("telegramSubtitle")}
                     </a>

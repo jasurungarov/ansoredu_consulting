@@ -9,6 +9,7 @@ import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import "../globals.css";
 
+
 // ─── Per-locale metadata config
 type LocaleMeta = {
   title: string;
@@ -17,6 +18,7 @@ type LocaleMeta = {
   ogLocale: string;
   canonical: string;
 };
+
 
 const metaConfig: Record<string, LocaleMeta> = {
   uz: {
@@ -161,6 +163,7 @@ const metaConfig: Record<string, LocaleMeta> = {
     canonical: "https://ansoredu.uz/en",
   },
 };
+
 
 // ─── generateMetadata
 export async function generateMetadata({

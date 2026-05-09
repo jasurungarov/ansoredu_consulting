@@ -60,7 +60,7 @@ export default function HeroSection() {
                 <ArrowRight size={18} />
               </Link>
               <Link
-                href="/universities"
+                href="/about"
                 className="btn-secondary text-base px-8 py-4">
                 {t("ctaLearnMore")}
               </Link>
