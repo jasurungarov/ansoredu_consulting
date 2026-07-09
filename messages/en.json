@@ -5,6 +5,7 @@
     "services": "Services",
     "universities": "Universities",
     "contact": "Contact",
+    "questions": "FAQ",
     "apply": "Apply Now"
   },
   "hero": {
@@ -203,5 +204,210 @@
     "title": "Page Not Found",
     "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
     "homeButton": "Back to Home"
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "FAQ",
+    "subtitle": "Answers to the most common questions about Ansor Edu's services, scholarships, and the application process.",
+    "searchPlaceholder": "Search for a question...",
+    "notFound": "No questions found. Try a different keyword or contact us.",
+    "stillHaveQuestions": "Didn't find the answer to your question?",
+    "contactUs": "Contact Us",
+    "categories": [
+      {
+        "title": "About the Company",
+        "icon": "building2",
+        "items": [
+          {"q": "What does Ansor Edu do?", "a": "Ansor Edu is an educational consulting center that helps students gain admission to prestigious universities in Saudi Arabia and the United Arab Emirates on a full scholarship basis. We support you at every stage — from preparing documents to settling into your studies."},
+          {"q": "When was the company founded, and how much experience do you have?", "a": "Ansor Edu has been operating since 2022. During this time, hundreds of students have successfully enrolled in their dream universities on full scholarships."},
+          {"q": "Why should I choose Ansor Edu?", "a": "We offer experienced, certified consultants, partnerships with more than 10 universities, a 95% success rate, and full support from document preparation through graduation."},
+          {"q": "How is your success rate calculated?", "a": "95% of students who contact us and submit all required documents in full are successfully admitted to their chosen university."},
+          {"q": "Which countries do you work with?", "a": "We currently work mainly with universities in Saudi Arabia and the United Arab Emirates, as well as with universities in Qatar."},
+          {"q": "Do you have proof of your track record?", "a": "Yes, you can read real student experiences in the \"What Our Students Say\" section of our website, and follow more success stories on our Telegram channel."}
+        ]
+      },
+      {
+        "title": "Scholarship Package",
+        "icon": "gift",
+        "items": [
+          {"q": "What does the full scholarship include?", "a": "The full scholarship covers round-trip flights, free accommodation, medical insurance, a monthly stipend, subsidized meals, free textbooks, local transportation, and excellence bonuses."},
+          {"q": "Is the scholarship really 100% free — are there any hidden costs?", "a": "The scholarship provided by the university is completely free — tuition, housing, and other essential costs are covered by the university. Ansor Edu's consulting service is billed separately; see the \"Payment & Financial Matters\" section for details."},
+          {"q": "How much is the monthly stipend?", "a": "The stipend amount varies by university and country. We'll give you the exact figure for your chosen university during your consultation."},
+          {"q": "What are the dormitories like?", "a": "Universities provide modern, comfortable dormitories for international students — usually rooms for 1-2 people with internet, air conditioning, and a shared kitchen."},
+          {"q": "How does the medical insurance work?", "a": "All scholarship students receive full medical insurance throughout their studies, covering hospital visits, medication, and emergency care."},
+          {"q": "Are flight costs covered?", "a": "Yes, round-trip flights — for arrival at the start of studies and departure after graduation — are fully covered by the university."},
+          {"q": "How is meal provision organized?", "a": "Students have access to a subsidized (discounted or free) meal system on campus, covering most of their daily food costs."},
+          {"q": "Are textbooks and study materials provided?", "a": "Yes, core textbooks and study materials are provided free of charge by the university library and faculty."},
+          {"q": "Are local transportation costs covered?", "a": "Yes, there are free or discounted transportation options both within the campus and, at some universities, for city transit as well."},
+          {"q": "What is the \"excellence bonus\"?", "a": "This is an additional financial reward or increased stipend given by the university to students who achieve outstanding academic results."}
+        ]
+      },
+      {
+        "title": "Partner Universities",
+        "icon": "graduation-cap",
+        "items": [
+          {"q": "Which universities do you partner with?", "a": "We currently partner with more than 10 leading universities, including King Abdulaziz University, Umm Al-Qura University, the Islamic University of Madinah, King Saud University, KAUST, Princess Nora bint Abdulrahman University, Qassim University, Qatar University, and UAE University."},
+          {"q": "What is the international ranking of these universities?", "a": "Our partner universities rank among the world's top 150-800 according to the QS World University Rankings. The exact ranking for each university is listed on its page."},
+          {"q": "What fields of study are available?", "a": "A wide range of fields is available, including engineering, medicine, IT, Islamic studies, Arabic language, business, law, education, and social sciences. Each university has its own areas of strength."},
+          {"q": "Are there universities exclusively for women?", "a": "Yes, Princess Nora bint Abdulrahman University — the largest women's university in the world — offers full scholarship programs exclusively for female students."},
+          {"q": "Can I apply to several universities at the same time?", "a": "Yes, we recommend applying to several partner universities in parallel to increase your chances."},
+          {"q": "In which cities are the universities located?", "a": "The universities are located in Jeddah, Makkah, Madinah, Riyadh, Buraydah (Saudi Arabia), Doha (Qatar), and Al-Ain (UAE)."}
+        ]
+      },
+      {
+        "title": "Application Requirements",
+        "icon": "file-check",
+        "items": [
+          {"q": "Who can apply?", "a": "Any candidate who has completed secondary or vocational education and meets the requirements of their chosen university can apply."},
+          {"q": "Is there an age limit?", "a": "Most bachelor's programs recommend an age range of 17-25, though this can vary by university and program — we'll confirm the exact requirement during your consultation."},
+          {"q": "What GPA is required on my diploma/certificate?", "a": "The minimum required score varies from university to university; higher grades generally improve your admission chances. We'll tell you the exact requirement for your chosen university."},
+          {"q": "Is a language certificate required?", "a": "Some programs may require Arabic or English proficiency, but most universities offer a foundation year where the language is taught from scratch."},
+          {"q": "Is there an exam or interview?", "a": "Some universities may hold a short online interview or test. We'll let you know about this in advance during the application process and help you prepare."},
+          {"q": "Can I apply if I've studied abroad before?", "a": "Yes, we review such cases individually — during your consultation we'll assess your documents and suggest a suitable program."},
+          {"q": "Can I apply if I've just finished school?", "a": "Absolutely — most of our students are recent high school graduates. You can start the application process as soon as you receive your certificate."},
+          {"q": "Do you also help with master's or doctoral programs?", "a": "Yes, alongside bachelor's degrees, we also provide guidance for master's and, in some cases, doctoral programs."}
+        ]
+      },
+      {
+        "title": "Documents",
+        "icon": "file-text",
+        "items": [
+          {"q": "What documents will I need?", "a": "You'll typically need a passport, your certificate/diploma with transcript, birth certificate, medical certificate, and photos. We provide the full list during your consultation."},
+          {"q": "Which documents need to be translated?", "a": "Core documents such as your certificate/diploma, birth certificate, and passport must be officially translated into Arabic or English and notarized. We take care of this entire process for you."},
+          {"q": "Where is notarization done?", "a": "Document notarization is carried out through local (Uzbekistan/Kyrgyzstan) notary offices, and we provide full assistance throughout this process."},
+          {"q": "How long must my passport be valid?", "a": "Your passport should be valid for at least 1.5-2 years, since the application and visa process takes some time."},
+          {"q": "Is a medical certificate required?", "a": "Yes, most universities require a general medical certificate, which may include test results for certain infectious diseases."},
+          {"q": "Is a certificate of no criminal record required?", "a": "Some universities and visa types may require a certificate confirming you have no criminal record. We'll give you the exact list during your consultation."}
+        ]
+      },
+      {
+        "title": "Language & Academic Preparation",
+        "icon": "languages",
+        "items": [
+          {"q": "Can I apply if I don't know Arabic?", "a": "Yes, you don't need to know Arabic. Most universities offer a foundation year, where Arabic is taught from the beginning."},
+          {"q": "Is there a language preparation year at university?", "a": "Yes, most of our partner universities offer a one-year language and academic preparation program to get students ready for their main faculty."},
+          {"q": "Is an IELTS/TOEFL certificate required?", "a": "It's not required for most programs, since the foundation year covers language training. Some special programs taught in English may require a language certificate."},
+          {"q": "Is teaching in Arabic or in English?", "a": "Most programs are taught in Arabic, though some technical and medical fields also offer programs taught in English."}
+        ]
+      },
+      {
+        "title": "Process & Timelines",
+        "icon": "clock",
+        "items": [
+          {"q": "How long does the process take after I apply?", "a": "Once all documents are submitted, it usually takes 1-3 months to receive a response from the university, depending on the institution and the season."},
+          {"q": "When will I receive the university's admission decision?", "a": "Admission decisions usually arrive within a few weeks of applying, though it can take up to 2-3 months depending on the university's process."},
+          {"q": "Can I reapply if my application is rejected?", "a": "Yes, we analyze the reasons for rejection and help you reapply in the next intake or to another partner university."},
+          {"q": "When does the application period start and end?", "a": "Deadlines vary by university, and admissions are usually announced once or twice a year, for the fall and spring semesters. We'll let you know the exact dates."},
+          {"q": "How many intakes are there per year?", "a": "Most universities have 1-2 intakes per year, mainly for the fall semester, with some also offering a spring semester intake."},
+          {"q": "Can I still apply after the deadline has passed?", "a": "In some cases, late admission spots may become available. Contact us after the deadline to ask about current opportunities."}
+        ]
+      },
+      {
+        "title": "Visa & Departure",
+        "icon": "plane",
+        "items": [
+          {"q": "How do you help with the visa process?", "a": "Once you receive your university acceptance letter, we provide full support in preparing and submitting all the documents needed for your student visa."},
+          {"q": "How long does it take to get a visa?", "a": "A student visa is usually processed within 2-6 weeks, though this can vary depending on the embassy's workload."},
+          {"q": "What preparation is provided before departure?", "a": "Before departure, we hold a pre-departure briefing covering culture, climate, essential items to bring, and everything you need to know for your first days."},
+          {"q": "Is there an airport pickup service?", "a": "Most universities offer an airport pickup service for new students and transport to campus."}
+        ]
+      },
+      {
+        "title": "Life After Arrival",
+        "icon": "home",
+        "items": [
+          {"q": "Do you provide support after arrival too?", "a": "Yes, our post-arrival support covers settling in, registration, and help during the initial adjustment period."},
+          {"q": "Who can I contact if I have a problem during my studies?", "a": "Our team stays in touch throughout your studies — you can reach out to us anytime via Telegram with your questions."},
+          {"q": "Can students work while studying?", "a": "Some countries and visa types allow limited part-time work, depending on local law and university regulations."},
+          {"q": "Do you help graduates find jobs?", "a": "Most universities have career centers that help graduates find employment, and our alumni network can also provide useful connections."}
+        ]
+      },
+      {
+        "title": "Living Conditions & Culture",
+        "icon": "globe-2",
+        "items": [
+          {"q": "What's the climate like in Saudi Arabia/UAE?", "a": "The climate is generally hot and dry, with high temperatures in summer. University campuses and dormitories are all equipped with air conditioning."},
+          {"q": "Do I need to follow local culture and customs?", "a": "Yes, respecting the host country's laws and traditions is important. We cover this in detail during the pre-departure briefing."},
+          {"q": "Will I have trouble finding halal food?", "a": "No, all food in Saudi Arabia and the UAE meets halal standards, so this isn't something to worry about."},
+          {"q": "How safe are these countries?", "a": "Saudi Arabia and the UAE are among the safest countries in the world, with very low crime rates."},
+          {"q": "Is there an Uzbek/Kyrgyz student community?", "a": "Yes, many universities have a Central Asian student community that helps new students settle in."}
+        ]
+      },
+      {
+        "title": "Insurance & Healthcare",
+        "icon": "heart-pulse",
+        "items": [
+          {"q": "What does the medical insurance cover?", "a": "Insurance typically covers general checkups, emergency care, and the costs of basic treatment. Exact terms vary by university."},
+          {"q": "Do I need to pay extra to visit a hospital?", "a": "No extra payment is required for services covered by insurance, though services outside its coverage may involve a fee."},
+          {"q": "Are medication costs covered?", "a": "In most cases, basic medications are covered under the medical insurance plan."}
+        ]
+      },
+      {
+        "title": "Payment & Financial Matters",
+        "icon": "wallet",
+        "items": [
+          {"q": "How much do your services cost?", "a": "The cost depends on the package of services you choose. We'll give you an exact price during your free, personalized consultation."},
+          {"q": "Is the consultation free?", "a": "Yes, the initial consultation is completely free — during it, we assess your chances and explain the next steps."},
+          {"q": "When is payment made?", "a": "Payment is usually made in stages — part at the start of document preparation, and the rest once admission is confirmed."},
+          {"q": "Is there a refund policy?", "a": "If a university issues an unjustified rejection, a partial refund may be considered under the terms of your contract. Exact conditions are specified in the contract."},
+          {"q": "What payment methods are available?", "a": "You can pay by cash, bank transfer, or card."},
+          {"q": "Can I pay in foreign currency?", "a": "Yes, payment can be made in local currency or US dollars — this can be arranged during your consultation."},
+          {"q": "Do you sign a contract?", "a": "Yes, before starting our services we sign a bilateral contract that clearly outlines all services, timelines, and payment terms."},
+          {"q": "Will I receive a receipt?", "a": "Yes, you will receive an official document (receipt) for every payment."}
+        ]
+      },
+      {
+        "title": "Special Circumstances",
+        "icon": "users",
+        "items": [
+          {"q": "Are there special arrangements for women?", "a": "Yes, there are separate dormitories for female students, and some universities — such as Princess Nora bint Abdulrahman University — are exclusively for women."},
+          {"q": "Are there facilities for religious practice?", "a": "Yes, campuses have prayer spaces and mosques, providing everything needed for religious practice."},
+          {"q": "Can siblings apply together?", "a": "Yes, family members can apply separately, and we work with each candidate individually."},
+          {"q": "Can married students apply?", "a": "Yes, marital status doesn't prevent you from applying. Some universities also offer housing options for married students."},
+          {"q": "Are there accommodations for students with disabilities?", "a": "Many modern campuses have infrastructure adapted for students with special needs. We'll check the specific options for your chosen university."},
+          {"q": "Can I get a scholarship for a second degree?", "a": "Some programs are open to second-degree students, though this depends on the university's policy. We'll review your individual case during a consultation."}
+        ]
+      },
+      {
+        "title": "Keeping Your Scholarship & Ongoing Studies",
+        "icon": "award",
+        "items": [
+          {"q": "How many years does the scholarship cover?", "a": "For bachelor's programs, the scholarship usually covers the entire course of study (4-6 years, depending on the major)."},
+          {"q": "What GPA do I need to keep my scholarship?", "a": "Universities generally require satisfactory academic performance. The exact minimum GPA depends on university policy, and we'll explain this in detail during the preparation period."},
+          {"q": "Will my scholarship be canceled if my GPA drops?", "a": "If low performance continues for a long period, the university will issue a warning and give you time to improve. Cancellation is usually a last resort."},
+          {"q": "Can I change my major?", "a": "Most universities allow you to choose or change your major during the first (foundation) year."},
+          {"q": "Is it possible to transfer to another university?", "a": "This is rare and depends on university policy. If needed, we'll provide individual guidance."}
+        ]
+      },
+      {
+        "title": "How We Differ & Trust",
+        "icon": "shield-check",
+        "items": [
+          {"q": "What makes you different from other education consulting companies?", "a": "Our advantage is direct communication with partner universities, a transparent process, an experienced team, and a 95% success rate."},
+          {"q": "Can't I apply directly without an agency?", "a": "In theory, yes, but properly preparing documents, arranging translation, notarization, and communicating with the university is a complex, time-consuming process. We take that burden off your shoulders and reduce the risk of errors."},
+          {"q": "How can I protect myself from fraud?", "a": "We operate under an official contract, all payments are documented, and we can put you in touch with our real students."},
+          {"q": "Where can I read reviews and feedback?", "a": "You can find genuine feedback from our students in the \"What Our Students Say\" section of our website and on our Telegram/Instagram pages."}
+        ]
+      },
+      {
+        "title": "Website & Technical Questions",
+        "icon": "settings",
+        "items": [
+          {"q": "Do I apply online, or do I need to visit an office?", "a": "You can submit your application entirely online through the \"Contact\" section of our website. Our specialist will then get in touch with you for the next steps."},
+          {"q": "Is the information I submit through the website secure?", "a": "Yes, all information submitted through the form is kept confidential and used only for the application process."},
+          {"q": "Can I correct my information if I made a mistake in the form?", "a": "Of course — just contact us via Telegram or phone, and we'll help you update your information."}
+        ]
+      },
+      {
+        "title": "Contact & Consultation",
+        "icon": "message-circle",
+        "items": [
+          {"q": "How can I get a consultation?", "a": "Fill out the \"Submit Application\" form on our website, or message us directly on Telegram (@ansor_edu_admin) — we'll get in touch for a free consultation."},
+          {"q": "Can I reach you via Telegram?", "a": "Yes, you can ask us questions anytime through our Telegram account @ansor_edu_admin."},
+          {"q": "How is the free consultation conducted?", "a": "The consultation can be held by phone call, Telegram chat, or video call — whichever is most convenient for you."},
+          {"q": "What are your working hours?", "a": "We work Monday through Friday, from 9:00 AM to 6:00 PM."}
+        ]
+      }
+    ]
   }
 }

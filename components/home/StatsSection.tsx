@@ -32,7 +32,7 @@ export default function StatsSection() {
 
   return (
     <section className="md:py-2 bg-blue-600">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto md:px-4">
         <Carousel
           opts={{
             align: "start",
@@ -51,10 +51,10 @@ export default function StatsSection() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="text-center p-6"
                 >
-                  <p className="text-3xl md:text-5xl font-extrabold text-white mb-2">
+                  <p className="text-xl md:text-5xl font-extrabold text-white">
                     {stat.value}
                   </p>
-                  <p className="text-blue-100 text-base font-medium sm:text-sm">
+                  <p className="text-blue-100 text-xs font-medium md:text-lg">
                     {stat.label}
                   </p>
                 </motion.div>

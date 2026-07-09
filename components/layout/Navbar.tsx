@@ -20,6 +20,7 @@ export default function Navbar() {
     { href: "/services", label: t('services') },
     { href: "/universities", label: t('universities') },
     { href: "/contact", label: t('contact') },
+    { href: "/questions", label: t('questions') },
   ];
  
   const isActive = (href: string) => {

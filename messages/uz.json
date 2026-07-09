@@ -5,6 +5,7 @@
     "services": "Xizmatlar",
     "universities": "Universitetlar",
     "contact": "Aloqa",
+    "questions": "Savollar",
     "apply": "Hoziroq topshirish"
   },
   "hero": {
@@ -204,5 +205,486 @@
     "title": "Sahifa topilmadi",
     "description": "Siz qidirayotgan sahifa o'chirilgan, nomi o'zgartirilgan yoki vaqtinchalik mavjud emas.",
     "homeButton": "Bosh sahifaga qaytish"
-  }
+  },
+  "faq": {
+  "badge": "Ko'p so'raladigan savollar",
+  "title": "Savol-javoblar",
+  "subtitle": "Ansor Edu xizmatlari, grantlar va ariza topshirish jarayoni haqida eng ko'p beriladigan savollarga javoblar.",
+  "searchPlaceholder": "Savol bo'yicha qidiring...",
+  "notFound": "Hech qanday savol topilmadi. Boshqa kalit so'z bilan qidirib ko'ring yoki biz bilan bog'laning.",
+  "stillHaveQuestions": "Savolingizga javob topa olmadingizmi?",
+  "contactUs": "Biz bilan bog'laning",
+  "categories": [
+    {
+      "title": "Kompaniya haqida",
+      "icon": "building2",
+      "items": [
+        {
+          "q": "Ansor Edu nima bilan shug'ullanadi?",
+          "a": "Ansor Edu — talabalarga Saudiya Arabistoni va Birlashgan Arab Amirliklaridagi nufuzli universitetlarga to'liq grant asosida joylashishda yordam beruvchi ta'lim konsalting markazi. Biz hujjatlarni tayyorlashdan tortib, o'qishga joylashib bo'lguncha bo'lgan barcha bosqichda yordam ko'rsatamiz."
+        },
+        {
+          "q": "Kompaniya qachon tashkil topgan va tajribangiz qancha?",
+          "a": "Ansor Edu 2022-yildan buyon faoliyat yuritib kelmoqda. Shu davr ichida yuzlab talaba orzu qilgan universitetlariga to'liq grant asosida joylashishga muvaffaq bo'lgan."
+        },
+        {
+          "q": "Nega aynan Ansor Eduni tanlash kerak?",
+          "a": "Bizda tajribali va sertifikatlangan konsultantlar, 10 dan ortiq hamkor universitet, 95% muvaffaqiyat darajasi va hujjat tayyorlashdan to o'qishni tugatgunga qadar to'liq qo'llab-quvvatlash mavjud."
+        },
+        {
+          "q": "Muvaffaqiyat darajangiz (success rate) qanday hisoblanadi?",
+          "a": "Bizga murojaat qilgan va barcha talab qilingan hujjatlarni to'liq topshirgan talabalarning 95 foizi tanlagan universitetlariga muvaffaqiyatli qabul qilinadi."
+        },
+        {
+          "q": "Qaysi davlatlar bo'yicha xizmat ko'rsatasiz?",
+          "a": "Hozirda asosan Saudiya Arabistoni va Birlashgan Arab Amirliklaridagi universitetlar bilan hamkorlik qilamiz, shuningdek Qatar universitetlari bilan ham ishlaymiz."
+        },
+        {
+          "q": "Ish tajribangizni tasdiqlovchi natijalar bormi?",
+          "a": "Ha, saytimizdagi \"Talabalarimiz fikri\" bo'limida haqiqiy talabalarimizning tajribalarini o'qishingiz mumkin. Shuningdek, Telegram kanalimizda ham muvaffaqiyat hikoyalarini kuzatib borishingiz mumkin."
+        }
+      ]
+    },
+    {
+      "title": "Grant (stipendiya) tarkibi",
+      "icon": "gift",
+      "items": [
+        {
+          "q": "To'liq grant nimalarni o'z ichiga oladi?",
+          "a": "To'liq grant quyidagilarni qamrab oladi: bordi-keldi aviachiptalar, bepul turar joy, tibbiy sug'urta, oylik stipendiya, subsidiyalangan ovqatlanish, bepul darsliklar, mahalliy transport va a'lo o'zlashtirish uchun mukofotlar."
+        },
+        {
+          "q": "Grant chindan ham 100% bepulmi, yashirin to'lovlar bormi?",
+          "a": "Universitet tomonidan taqdim etiladigan grant to'liq bepul — o'qish haqi, yashash va boshqa asosiy xarajatlar universitet tomonidan qoplanadi. Ansor Eduning konsalting xizmati alohida to'lanadi, bu haqda \"To'lov va moliyaviy masalalar\" bo'limida batafsil o'qishingiz mumkin."
+        },
+        {
+          "q": "Oylik stipendiya miqdori qancha?",
+          "a": "Stipendiya miqdori universitet va mamlakatga qarab farq qiladi. Aniq summani tanlagan universitetingiz bo'yicha konsultatsiya vaqtida bildiramiz."
+        },
+        {
+          "q": "Yotoqxona sharoiti qanday?",
+          "a": "Universitetlar xalqaro talabalar uchun zamonaviy, qulay yotoqxonalar taqdim etadi — odatda 1-2 kishilik xonalar, internet, konditsioner va umumiy oshxona bilan jihozlangan."
+        },
+        {
+          "q": "Tibbiy sug'urta qanday ishlaydi?",
+          "a": "Barcha grant talabalari o'qish davomida to'liq tibbiy sug'urta bilan ta'minlanadi, bu shifoxonaga murojaat, dori-darmon va shoshilinch tibbiy yordamni qamrab oladi."
+        },
+        {
+          "q": "Aviachipta xarajatlari qoplanadimi?",
+          "a": "Ha, o'qish boshlanishida (borish) va bitirgandan keyin (qaytish) bordi-keldi aviachiptalar universitet tomonidan to'liq qoplanadi."
+        },
+        {
+          "q": "Ovqatlanish qanday tashkil etiladi?",
+          "a": "Talabalar uchun kampus hududida subsidiyalangan (arzonlashtirilgan yoki bepul) ovqatlanish tizimi mavjud bo'lib, kunlik ovqatlanish xarajatlarining katta qismini qoplaydi."
+        },
+        {
+          "q": "Darslik va o'quv materiallari beriladimi?",
+          "a": "Ha, asosiy darsliklar va o'quv materiallari universitet kutubxonasi va fakultet tomonidan bepul taqdim etiladi."
+        },
+        {
+          "q": "Mahalliy transport xarajati qoplanadimi?",
+          "a": "Ha, kampus ichida va ba'zi universitetlarda shahar transportida yurish uchun ham imtiyozlar yoki bepul xizmat taqdim etiladi."
+        },
+        {
+          "q": "\"Excellence bonus\" (a'lo o'zlashtirish mukofoti) nima?",
+          "a": "Bu — yuqori akademik ko'rsatkichlarga erishgan talabalarga universitet tomonidan beriladigan qo'shimcha moliyaviy mukofot yoki stipendiya oshirilishi."
+        }
+      ]
+    },
+    {
+      "title": "Hamkor universitetlar",
+      "icon": "graduation-cap",
+      "items": [
+        {
+          "q": "Qaysi universitetlar bilan hamkorlik qilasiz?",
+          "a": "Hozirda King Abdulaziz University, Umm Al-Qura University, Islamic University of Madinah, King Saud University, KAUST, Princess Nora bint Abdulrahman University, Qassim University, Qatar University va UAE University kabi 10 dan ortiq nufuzli universitet bilan hamkorlik qilamiz."
+        },
+        {
+          "q": "Universitetlarning xalqaro reytingi qanday?",
+          "a": "Hamkor universitetlarimiz QS World University Rankings bo'yicha dunyoning eng yaxshi 150-800 talik universitetlari qatoriga kiradi. Har bir universitet sahifasida aniq reyting ko'rsatilgan."
+        },
+        {
+          "q": "Qaysi yo'nalishlar (mutaxassisliklar) mavjud?",
+          "a": "Muhandislik, tibbiyot, IT, islomshunoslik, arab tili, biznes, huquq, ta'lim va ijtimoiy fanlar kabi keng yo'nalishlar mavjud. Har bir universitet o'ziga xos kuchli yo'nalishlarga ega."
+        },
+        {
+          "q": "Ayollar uchun alohida universitetlar bormi?",
+          "a": "Ha, Princess Nora bint Abdulrahman University — dunyodagi eng yirik ayollar universiteti bo'lib, faqat qiz talabalar uchun to'liq grant dasturlarini taklif etadi."
+        },
+        {
+          "q": "Bir nechta universitetga bir vaqtda ariza berish mumkinmi?",
+          "a": "Ha, imkoniyatlaringizni oshirish uchun bir nechta hamkor universitetga parallel ravishda ariza topshirishni tavsiya qilamiz."
+        },
+        {
+          "q": "Universitetlar qaysi shaharlarda joylashgan?",
+          "a": "Universitetlar Jidda, Makka, Madina, Rиyod, Buraydah (Saudiya Arabistoni), Doha (Qatar) va Al-Ain (BAA) kabi shaharlarda joylashgan."
+        }
+      ]
+    },
+    {
+      "title": "Ariza topshirish shartlari",
+      "icon": "file-check",
+      "items": [
+        {
+          "q": "Kimlar ariza topshira oladi?",
+          "a": "Umumiy o'rta yoki o'rta maxsus ta'limni tugatgan, tanlangan universitet talablariga javob beradigan barcha nomzodlar ariza topshirishi mumkin."
+        },
+        {
+          "q": "Yosh chegarasi bormi?",
+          "a": "Ko'pchilik bakalavriat dasturlari uchun 17-25 yosh oralig'i tavsiya etiladi, biroq bu universitet va dasturga qarab farq qilishi mumkin — aniq ma'lumotni konsultatsiyada bildiramiz."
+        },
+        {
+          "q": "Diplom/attestat GPA balli qancha bo'lishi kerak?",
+          "a": "Talab qilinadigan minimal ko'rsatkich universitetdan universitetga farq qiladi, odatda attestatdagi yuqori baholar qabul imkoniyatini oshiradi. Aniq talabni tanlangan universitet bo'yicha aytib beramiz."
+        },
+        {
+          "q": "Til bilish sertifikati talab qilinadimi?",
+          "a": "Ba'zi dasturlar uchun arab yoki ingliz tili bilimi talab qilinishi mumkin, biroq aksariyat universitetlarda tayyorgarlik (foundation) yili mavjud bo'lib, u yerda til o'rgatiladi."
+        },
+        {
+          "q": "Imtihon yoki suhbat (interview) bo'ladimi?",
+          "a": "Ba'zi universitetlar onlayn suhbat yoki qisqa test o'tkazishi mumkin. Bu haqda ariza jarayonida sizga oldindan xabar beramiz va tayyorgarlik ko'rishga yordam beramiz."
+        },
+        {
+          "q": "Xorijda avval o'qigan bo'lsam ham ariza bera olamanmi?",
+          "a": "Ha, bunday holatlarni individual tarzda ko'rib chiqamiz — konsultatsiya vaqtida hujjatlaringizni baholab, mos dastur tavsiya qilamiz."
+        },
+        {
+          "q": "Maktabni endi tugatgan bo'lsam ariza bera olamanmi?",
+          "a": "Albatta, aksariyat talabalarimiz maktabni yangi tugatgan bitiruvchilar. Attestat qo'lingizga tekkandan so'ng darhol ariza jarayonini boshlashingiz mumkin."
+        },
+        {
+          "q": "Magistratura yoki doktoranturaga ham yordam berasizmi?",
+          "a": "Ha, bakalavriat bilan bir qatorda magistratura va ba'zi hollarda doktorantura dasturlariga ham yo'llanma beramiz."
+        }
+      ]
+    },
+    {
+      "title": "Hujjatlar",
+      "icon": "file-text",
+      "items": [
+        {
+          "q": "Qanday hujjatlar kerak bo'ladi?",
+          "a": "Odatda pasport, attestat/diplom va uning bahosi, tug'ilganlik haqidagi guvohnoma, tibbiy ma'lumotnoma va foto kabi hujjatlar talab qilinadi. To'liq ro'yxatni konsultatsiya vaqtida beramiz."
+        },
+        {
+          "q": "Qanday hujjatlar tarjima qilinishi kerak?",
+          "a": "Attestat/diplom, tug'ilganlik haqidagi guvohnoma va pasport kabi asosiy hujjatlar arab yoki ingliz tiliga rasmiy tarjima qilinishi va notarial tasdiqlanishi kerak. Biz bu jarayonni to'liq o'z zimmamizga olamiz."
+        },
+        {
+          "q": "Notarial tasdiqlash qayerda amalga oshiriladi?",
+          "a": "Hujjatlarni notarial tasdiqlash mahalliy (O'zbekiston/Qirg'iziston) notarial idoralar orqali amalga oshiriladi, biz bu jarayonda to'liq yordam beramiz."
+        },
+        {
+          "q": "Pasport muddati qancha bo'lishi kerak?",
+          "a": "Pasportingiz kamida 1.5-2 yil amal qilish muddatiga ega bo'lishi tavsiya etiladi, chunki ariza va viza jarayoni ma'lum vaqt talab qiladi."
+        },
+        {
+          "q": "Sog'liq haqidagi ma'lumotnoma talab qilinadimi?",
+          "a": "Ha, ko'pchilik universitetlar umumiy sog'lig'ingiz haqida tibbiy ma'lumotnoma (shu jumladan ba'zi yuqumli kasalliklar bo'yicha tekshiruv natijalarini) talab qiladi."
+        },
+        {
+          "q": "Sudlanganlik haqida ma'lumotnoma kerakmi?",
+          "a": "Ba'zi universitetlar va viza turlari uchun sudlanmaganlik haqida ma'lumotnoma talab qilinishi mumkin. Bu haqda aniq ro'yxatni konsultatsiya vaqtida taqdim etamiz."
+        }
+      ]
+    },
+    {
+      "title": "Til va ta'lim tayyorgarligi",
+      "icon": "languages",
+      "items": [
+        {
+          "q": "Arab tilini bilmasam ham ariza bera olamanmi?",
+          "a": "Ha, arab tilini bilishingiz shart emas. Ko'pchilik universitetlarda tayyorgarlik (foundation) yili mavjud bo'lib, u yerda arab tili nolldan o'rgatiladi."
+        },
+        {
+          "q": "Universitetda til tayyorgarlik yili bormi?",
+          "a": "Ha, aksariyat hamkor universitetlarimizda 1 yillik til va fan tayyorgarlik dasturi mavjud, bu davrda talabalar asosiy fakultetga o'tish uchun tayyorlanadi."
+        },
+        {
+          "q": "IELTS/TOEFL sertifikati shartmi?",
+          "a": "Ko'pchilik dasturlar uchun shart emas, chunki tayyorgarlik yilida til o'rgatiladi. Ba'zi ingliz tilida o'qitiladigan maxsus dasturlar uchun esa til sertifikati talab qilinishi mumkin."
+        },
+        {
+          "q": "O'qish tili qanday — arab tilida yoki ingliz tilida?",
+          "a": "Ko'pchilik dasturlar arab tilida olib boriladi, ammo ba'zi texnik va tibbiy yo'nalishlarda ingliz tilida ta'lim beruvchi dasturlar ham mavjud."
+        }
+      ]
+    },
+    {
+      "title": "Jarayon va muddatlar",
+      "icon": "clock",
+      "items": [
+        {
+          "q": "Ariza topshirgandan keyin jarayon qancha davom etadi?",
+          "a": "Odatda hujjatlar to'liq topshirilgandan so'ng, universitetdan javob olishgacha 1-3 oy vaqt ketadi. Bu universitet va mavsumga qarab farq qilishi mumkin."
+        },
+        {
+          "q": "Universitetga qabul javobi qachon keladi?",
+          "a": "Qabul javobi odatda ariza topshirilgandan keyin bir necha hafta ichida, ba'zan esa 2-3 oygacha kelishi mumkin — bu universitet ish jarayoniga bog'liq."
+        },
+        {
+          "q": "Ariza rad etilsa, qayta urinish mumkinmi?",
+          "a": "Ha, rad etilish sabablarini tahlil qilib, keyingi qabul mavsumida yoki boshqa hamkor universitetga qayta ariza topshirishga yordam beramiz."
+        },
+        {
+          "q": "Ariza topshirish muddati qachon boshlanadi va tugaydi?",
+          "a": "Qabul muddatlari universitetga qarab farq qiladi, odatda yiliga 1-2 marta (kuz va bahor semestrlari uchun) qabul e'lon qilinadi. Aniq muddatlarni bizdan so'rab bilishingiz mumkin."
+        },
+        {
+          "q": "Yiliga necha marta qabul bo'ladi?",
+          "a": "Aksariyat universitetlarda yiliga 1-2 marta — asosan kuz semestri uchun, ba'zilarida qo'shimcha bahor semestri uchun ham qabul e'lon qilinadi."
+        },
+        {
+          "q": "Oxirgi muddatdan keyin ham ariza qabul qilinadimi?",
+          "a": "Ba'zi hollarda qo'shimcha (late admission) joylar bo'lishi mumkin. Muddat tugaganidan keyin ham biz bilan bog'lanib, mavjud imkoniyatlarni so'rashingiz mumkin."
+        }
+      ]
+    },
+    {
+      "title": "Viza va jo'nash",
+      "icon": "plane",
+      "items": [
+        {
+          "q": "Viza olishda qanday yordam berasiz?",
+          "a": "Universitet tomonidan qabul xati olingandan so'ng, biz talaba vizasi uchun barcha hujjatlarni tayyorlash va topshirish jarayonida to'liq yordam beramiz."
+        },
+        {
+          "q": "Viza olish uchun qancha vaqt ketadi?",
+          "a": "Odatda talaba vizasi 2-6 hafta ichida rasmiylashtiriladi, ammo bu elchixona ish yukiga qarab o'zgarishi mumkin."
+        },
+        {
+          "q": "Jo'nashdan oldin qanday tayyorgarlik ko'rsatiladi?",
+          "a": "Jo'nashdan oldin brifing (pre-departure briefing) o'tkazamiz — u yerda madaniyat, iqlim, kerakli buyumlar va birinchi kunlardagi zarur ma'lumotlar bilan tanishtiramiz."
+        },
+        {
+          "q": "Aeroportda kutib olish xizmati bormi?",
+          "a": "Ko'pchilik universitetlar yangi talabalarni aeroportdan kutib olib, kampusgacha yetkazib qo'yish xizmatini taqdim etadi."
+        }
+      ]
+    },
+    {
+      "title": "Borgandan keyingi hayot",
+      "icon": "home",
+      "items": [
+        {
+          "q": "Borgandan keyin ham yordam beriladimi?",
+          "a": "Ha, \"Post-Arrival Support\" xizmati doirasida joylashishda, ro'yxatdan o'tishda va dastlabki moslashish davrida yordam beramiz."
+        },
+        {
+          "q": "O'qish davomida muammo yuzaga kelsa kimga murojaat qilaman?",
+          "a": "Bizning jamoamiz o'qish davomida ham siz bilan aloqada bo'ladi — Telegram orqali istalgan vaqtda savolларингиз bilan murojaat qilishingiz mumkin."
+        },
+        {
+          "q": "Talabalar o'qish paytida ishlashi mumkinmi?",
+          "a": "Ba'zi mamlakatlar va viza turlarida cheklangan vaqt ichida (part-time) ishlashga ruxsat berilishi mumkin. Bu qonunchilik va universitet qoidalariga bog'liq."
+        },
+        {
+          "q": "Bitirgandan keyin ish topishga yordam berasizmi?",
+          "a": "Universitetlarning ko'pchiligida karyera markazi mavjud bo'lib, bitiruvchilarga ish topishda ko'maklashadi. Bizning alumnilar tarmog'imiz orqali ham foydali aloqalar o'rnatish mumkin."
+        }
+      ]
+    },
+    {
+      "title": "Turmush sharoiti va madaniyat",
+      "icon": "globe-2",
+      "items": [
+        {
+          "q": "Saudiya Arabistoni/BAA iqlimi qanday?",
+          "a": "Iqlim asosan issiq va quruq bo'lib, yozda harorat yuqori bo'ladi. Universitet kampuslari va yotoqxonalar konditsioner bilan jihozlangan."
+        },
+        {
+          "q": "Mahalliy madaniyat va urf-odatlarga rioya qilish shartmi?",
+          "a": "Ha, mezbon davlatning qonun va an'analariga hurmat bilan qarash muhim. Jo'nashdan oldin brifingda bu haqda batafsil ma'lumot beramiz."
+        },
+        {
+          "q": "Oziq-ovqat (halol taomlar) bilan muammo bo'lmaydimi?",
+          "a": "Yo'q, Saudiya Arabistoni va BAA da barcha oziq-ovqat halol standartlariga mos keladi, shu sabab bu masalada tashvishlanishga hojat yo'q."
+        },
+        {
+          "q": "Xavfsizlik darajasi qanday?",
+          "a": "Saudiya Arabistoni va BAA dunyodagi eng xavfsiz mamlakatlar qatoriga kiradi, jinoyat darajasi juda past."
+        },
+        {
+          "q": "O'zbek/qirg'iz talabalar diasporasi bormi?",
+          "a": "Ha, ko'p universitetlarda Markaziy Osiyo talabalari jamoasi mavjud bo'lib, yangi talabalarga moslashishda yordam beradi."
+        }
+      ]
+    },
+    {
+      "title": "Sug'urta va tibbiyot",
+      "icon": "heart-pulse",
+      "items": [
+        {
+          "q": "Tibbiy sug'urta qanday kasalliklarni qamrab oladi?",
+          "a": "Sug'urta odatda umumiy tibbiy ko'rik, shoshilinch tibbiy yordam va asosiy davolanish xarajatlarini qamrab oladi. Aniq shartlar universitetga qarab farq qiladi."
+        },
+        {
+          "q": "Shifoxonaga borish uchun qo'shimcha to'lov kerakmi?",
+          "a": "Sug'urta doirasidagi xizmatlar uchun qo'shimcha to'lov talab qilinmaydi, biroq sug'urta qamrovidan tashqari xizmatlar uchun to'lov bo'lishi mumkin."
+        },
+        {
+          "q": "Dori-darmon xarajatlari qoplanadimi?",
+          "a": "Ko'pchilik hollarda asosiy dori-darmonlar tibbiy sug'urta doirasida qoplanadi."
+        }
+      ]
+    },
+    {
+      "title": "To'lov va moliyaviy masalalar",
+      "icon": "wallet",
+      "items": [
+        {
+          "q": "Xizmatlaringiz uchun qancha to'lov qilinadi?",
+          "a": "Xizmat narxi tanlangan xizmatlar paketiga qarab farq qiladi. Aniq narxni bepul konsultatsiya vaqtida individual tarzda aytib beramiz."
+        },
+        {
+          "q": "Konsultatsiya bepulmi?",
+          "a": "Ha, dastlabki konsultatsiya butunlay bepul — shu davomida imkoniyatlaringiz baholanadi va keyingi qadamlar tushuntiriladi."
+        },
+        {
+          "q": "To'lov qachon amalga oshiriladi?",
+          "a": "To'lov odatda bosqichma-bosqich amalga oshiriladi — bir qismi hujjatlar tayyorlash boshlanishida, qolgani esa qabul tasdiqlangandan so'ng."
+        },
+        {
+          "q": "Pul qaytarish (refund) siyosati bormi?",
+          "a": "Agar universitet tomonidan asossiz rad javobi kelsa, shartnomada belgilangan shartlar asosida to'lovning bir qismini qaytarish imkoniyati ko'rib chiqiladi. Aniq shartlar shartnomada belgilanadi."
+        },
+        {
+          "q": "To'lovni qanday usulda amalga oshirish mumkin?",
+          "a": "To'lovni naqd pul, bank o'tkazmasi yoki plastik karta orqali amalga oshirishingiz mumkin."
+        },
+        {
+          "q": "Chet el valyutasida to'lash mumkinmi?",
+          "a": "Ha, milliy valyuta yoki dollar/AQSh dollarida to'lov qilish imkoniyati mavjud, bu haqda konsultatsiya vaqtida kelishib olamiz."
+        },
+        {
+          "q": "Shartnoma tuzasizmi?",
+          "a": "Ha, xizmat ko'rsatish boshlanishidan oldin ikki tomonlama shartnoma tuziladi, unda barcha xizmatlar, muddatlar va to'lov shartlari aniq belgilanadi."
+        },
+        {
+          "q": "Kvitansiya yoki chek beriladimi?",
+          "a": "Ha, har bir to'lov uchun rasmiy hujjat (kvitansiya) beriladi."
+        }
+      ]
+    },
+    {
+      "title": "Maxsus holatlar",
+      "icon": "users",
+      "items": [
+        {
+          "q": "Ayollar uchun alohida shart-sharoitlar bormi?",
+          "a": "Ha, ayol talabalar uchun alohida yotoqxonalar va ba'zan faqat qizlar uchun mo'ljallangan universitetlar (masalan, Princess Nora bint Abdulrahman University) mavjud."
+        },
+        {
+          "q": "Diniy amaliyotlar uchun sharoit yaratilganmi?",
+          "a": "Ha, kampuslarda namoz o'qish joylari va masjidlar mavjud, diniy amaliyotlar uchun to'liq sharoit yaratilgan."
+        },
+        {
+          "q": "Aka-uka/opa-singil birga ariza topshira oladimi?",
+          "a": "Ha, oila a'zolari alohida-alohida ariza topshirishlari mumkin, biz har bir nomzod bilan individual ishlaymiz."
+        },
+        {
+          "q": "Turmush qurgan talabalar ham ariza bera oladimi?",
+          "a": "Ha, oilaviy holat ariza berishga to'sqinlik qilmaydi. Ba'zi universitetlarda oilali talabalar uchun alohida turar joy shartlari ham mavjud."
+        },
+        {
+          "q": "Nogironligi bo'lgan talabalar uchun sharoit yaratilganmi?",
+          "a": "Ko'pchilik zamonaviy kampuslar maxsus ehtiyojli talabalar uchun moslashtirilgan infratuzilmaga ega. Aniq imkoniyatlarni tanlangan universitet bo'yicha alohida so'rab bilamiz."
+        },
+        {
+          "q": "Ikkinchi oliy ta'lim uchun ham grant olish mumkinmi?",
+          "a": "Ba'zi dasturlar ikkinchi oliy ta'lim uchun ham ochiq, biroq bu universitet siyosatiga bog'liq. Individual holatingizni konsultatsiyada ko'rib chiqamiz."
+        }
+      ]
+    },
+    {
+      "title": "Grantni saqlab qolish va o'qish davomida",
+      "icon": "award",
+      "items": [
+        {
+          "q": "Grant necha yilga beriladi?",
+          "a": "Bakalavriat dasturlari uchun grant odatda butun o'qish davri (4-6 yil, mutaxassislikka qarab) uchun beriladi."
+        },
+        {
+          "q": "Grantni saqlab qolish uchun qanday GPA talab qilinadi?",
+          "a": "Universitetlar odatda qoniqarli akademik ko'rsatkichni talab qiladi. Aniq minimal GPA universitet qoidalariga bog'liq bo'lib, bu haqda tayyorgarlik davrida batafsil ma'lumot beramiz."
+        },
+        {
+          "q": "GPA pasayib ketsa, grant bekor qilinadimi?",
+          "a": "Uzoq muddat davomida past ko'rsatkich saqlanib qolsa, universitet ogohlantirish beradi va tuzatish uchun vaqt beradi. Grantni bekor qilish odatda oxirgi chora sifatida ko'riladi."
+        },
+        {
+          "q": "Fanni (mutaxassislikni) almashtirish mumkinmi?",
+          "a": "Ko'pchilik universitetlarda birinchi yil (tayyorgarlik) davomida mutaxassislikni tanlash yoki o'zgartirish imkoniyati mavjud."
+        },
+        {
+          "q": "Universitetni ko'chirish (transfer) imkoniyati bormi?",
+          "a": "Bu holatlar kamdan-kam uchraydi va universitet siyosatiga bog'liq. Zarurat tug'ilsa, biz sizga individual maslahat beramiz."
+        }
+      ]
+    },
+    {
+      "title": "Boshqa agentliklardan farqi va ishonch",
+      "icon": "shield-check",
+      "items": [
+        {
+          "q": "Boshqa ta'lim konsalting kompaniyalaridan farqingiz nimada?",
+          "a": "Bizning afzalligimiz — hamkor universitetlar bilan to'g'ridan-to'g'ri aloqa, shaffof jarayon, tajribali jamoa va 95% muvaffaqiyat ko'rsatkichi."
+        },
+        {
+          "q": "Agentliksiz to'g'ridan-to'g'ri ariza topshirish mumkin emasmi?",
+          "a": "Nazariy jihatdan mumkin, ammo hujjatlarni to'g'ri tayyorlash, tarjima, notarial tasdiqlash va universitet bilan aloqa qilish murakkab va vaqt talab qiladigan jarayon. Biz bu yukni sizdan olib, xatoliklar ehtimolini kamaytiramiz."
+        },
+        {
+          "q": "Firibgarlikdan qanday himoyalanaman?",
+          "a": "Biz rasmiy shartnoma asosida ishlaymiz, barcha to'lovlar hujjatlashtiriladi va haqiqiy talabalarimiz bilan bog'lanish imkoniyatini taqdim etamiz."
+        },
+        {
+          "q": "Sharhlar va fikrlarni qayerdan o'qishim mumkin?",
+          "a": "Saytimizdagi \"Talabalarimiz fikri\" bo'limida va Telegram/Instagram sahifalarimizda haqiqiy talabalarimiz fikrlarini topishingiz mumkin."
+        }
+      ]
+    },
+    {
+      "title": "Sayt va texnik masalalar",
+      "icon": "settings",
+      "items": [
+        {
+          "q": "Ariza onlayn to'ldiriladimi yoki ofisga borish kerakmi?",
+          "a": "Arizani to'liq onlayn — saytimizdagi \"Bog'lanish\" bo'limi orqali topshirishingiz mumkin. Keyingi bosqichlarda mutaxassisimiz siz bilan bog'lanadi."
+        },
+        {
+          "q": "Saytdagi forma orqali yuborilgan ma'lumotlar xavfsizmi?",
+          "a": "Ha, forma orqali yuborilgan barcha ma'lumotlar maxfiy saqlanadi va faqat ariza jarayoni uchun ishlatiladi."
+        },
+        {
+          "q": "Formada xato ma'lumot kiritib yuborsam, tuzatish mumkinmi?",
+          "a": "Albatta, Telegram yoki telefon orqali biz bilan bog'lanib, ma'lumotlarni tuzatishingiz mumkin."
+        }
+      ]
+    },
+    {
+      "title": "Bog'lanish va konsultatsiya",
+      "icon": "message-circle",
+      "items": [
+        {
+          "q": "Konsultatsiyani qanday olsam bo'ladi?",
+          "a": "Saytimizdagi \"Ariza topshirish\" formasini to'ldiring yoki to'g'ridan-to'g'ri Telegram (@ansor_edu_admin) orqali yozing — bepul konsultatsiya uchun siz bilan bog'lanamiz."
+        },
+        {
+          "q": "Telegram orqali murojaat qilish mumkinmi?",
+          "a": "Ha, @ansor_edu_admin Telegram akkauntimiz orqali istalgan vaqtda savol berishingiz mumkin."
+        },
+        {
+          "q": "Bepul konsultatsiya qanday o'tkaziladi?",
+          "a": "Konsultatsiya telefon qo'ng'irog'i, Telegram orqali yozishma yoki video-chat shaklida, sizga qulay usulda o'tkaziladi."
+        },
+        {
+          "q": "Ish vaqtingiz qanday?",
+          "a": "Biz dushanba - juma kunlari soat 09:00 dan 18:00 gacha ishlaymiz."
+        }
+      ]
+    }
+  ]
+}
 }
