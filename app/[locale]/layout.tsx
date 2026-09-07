@@ -209,7 +209,7 @@ export async function generateMetadata({
         (l) => l !== cfg.ogLocale,
       ),
       siteName: "Ansor Edu",
-      emails: ["ansoredu@gmail.com"],
+      emails: ["ansoreduu@gmail.com"],
       countryName: "Uzbekistan",
       images: [
         {

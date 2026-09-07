@@ -12,8 +12,8 @@ const schema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
-  nickName: z.string().optional().or(z.literal("")),
-  message: z.string().optional(),
+  nickName: z.string().min(3).or(z.string().min(9)),
+  message: z.string().optional()
 });
 
 type FormData = z.infer<typeof schema>;
@@ -251,6 +251,12 @@ export default function ApplicationForm() {
             placeholder={t("placeholdernickName")}
             className={inputClass("nickName")}
           />
+          {errors.nickName && (
+            <p className="text-red-500 text-xs mt-1">
+              {t("errors.nickName", { ns: "errors" }) ??
+                errors.nickName}
+            </p>
+          )}
         </div>
       </div>
 

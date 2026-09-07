@@ -11,8 +11,8 @@ const schema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   city: z.string().min(2),
   interestedIn: z.string().min(1),
-  nickName: z.string().optional().or(z.literal("")),
-  message: z.string().optional(),
+  nickName: z.string().min(3).or(z.string().min(9)),
+  message: z.string().optional()
 });
 
 export async function POST(req: NextRequest) {
@@ -37,7 +37,7 @@ export async function POST(req: NextRequest) {
 📄 *Foydalanuvchi ma'lumotlari*
 
 👤 To'liq ism: ${data.fullName}
-📞 Telefon raqami: ${data.phone}
+📞 WhatsApp raqami: ${data.phone}
 📧 Elektron pochta: ${data.email || "Mavjud emas, kiritilmagan"}
 🏙️ Yashash shahri: ${data.city}
 🏛️ Qiziqayotgan universiteti: ${data.interestedIn}
